@@ -15,7 +15,7 @@ st.markdown("Interactive decision-support dashboard for revenue optimization and
 # -----------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_excel("C:/Users/jjjas/OneDrive - purdue.edu/NR_dataset.xlsx")
+    df = pd.read_excel("NR_dataset.xlsx")
     df['TransactionDate'] = pd.to_datetime(df['TransactionDate'])
     return df
 
